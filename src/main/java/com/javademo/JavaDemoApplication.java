@@ -1,13 +1,13 @@
-package com.java-demo;
+package com.javademo;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
-public class java-demoApplication extends Application<java-demoConfiguration> {
+public class JavaDemoApplication extends Application<JavaDemoConfiguration> {
 
     public static void main(final String[] args) throws Exception {
-        new java-demoApplication().run(args);
+        new JavaDemoApplication().run(args);
     }
 
     @Override
@@ -16,12 +16,12 @@ public class java-demoApplication extends Application<java-demoConfiguration> {
     }
 
     @Override
-    public void initialize(final Bootstrap<java-demoConfiguration> bootstrap) {
+    public void initialize(final Bootstrap<JavaDemoConfiguration> bootstrap) {
         // TODO: application initialization
     }
 
     @Override
-    public void run(final java-demoConfiguration configuration,
+    public void run(final JavaDemoConfiguration configuration,
                     final Environment environment) {
         // TODO: implement application
     }
