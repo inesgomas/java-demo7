@@ -11,9 +11,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.concurrent.atomic.AtomicLong;
 
 import java.sql.*;
-import java.util.Properties;
-import java.util.concurrent.Executor;
-import java.util.Map;
+
 
 
 @Path("/hello-world-20190831020836")
@@ -33,6 +31,10 @@ public class HelloWorld20190831020836 {
     @Timed
     public void sayHello(@QueryParam("name") Optional<String> name) {
         final String value = String.format(template, name.or(defaultName));
+    }
+
+    public double add(int x, int y){
+        return (double) x+y;
     }
 
     public Connection generateConnection(){
