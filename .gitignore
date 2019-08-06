@@ -1,5 +1,5 @@
 # Maven
-bin/
+bin
 target/
 dependency-reduced-pom.xml
 pom.xml.releaseBackup
