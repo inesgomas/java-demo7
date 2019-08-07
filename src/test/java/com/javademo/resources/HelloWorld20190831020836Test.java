@@ -15,13 +15,14 @@ public class HelloWorld20190831020836Test {
         System.out.println("YAY");
     }
 
-    
+    @Test
     public void testDumb() {
         resource = new HelloWorld20190831020836("Hello, %s", "Stranger");
         Optional<String> empty = Optional.absent();
         resource.sayHello(empty);
     }
 
+    @Test
     public void testAdd() {
         resource = new HelloWorld20190831020836("Hello, %s", "Stranger");
 
