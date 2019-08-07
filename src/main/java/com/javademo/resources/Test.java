@@ -1,31 +1,35 @@
 package com.javademo.resources;
 
 import com.google.common.base.Optional;
-import com.codahale.metrics.annotation.Timed;
 
-import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
-import java.util.concurrent.atomic.AtomicLong;
 
 @Path("/test")
 @Produces(MediaType.APPLICATION_JSON)
 public class Test {
-    private final String template;
-    private final String defaultName;
-    private final AtomicLong counter;
 
-    public Test(String template, String defaultName) {
-        this.template = template;
-        this.defaultName = defaultName;
-        this.counter = new AtomicLong();
+
+    public Test() {
+
     }
 
-    @GET
-    @Timed
-    public void sayHello(@QueryParam("name") Optional<String> name) {
-        
+    public int getFibonacci(Integer n) {
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+ 
+        int prevPrev = 0;
+        int prev = 1;
+        int result = 0;
+ 
+        for (int i = 2; i <= n; i++)
+        {
+            result = prev + prevPrev;
+            prevPrev = prev;
+            prev = result;
+        }
+        return result;
     }
 }
