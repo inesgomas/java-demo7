@@ -11,9 +11,4 @@ select max(cmp_id)
         from companies
         where trim(leading '0' from sap_number) = trim(leading '0' from v_sap_nr);
 
-select max(cmp_id)
-        into v_cmp_id
-        from companies
-        where trim(sap_number) = trim(v_sap_nr);
-
 END;
