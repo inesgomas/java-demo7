@@ -1,5 +1,5 @@
 # java-demo
-
+## A project used to showcase the java features of Codacy
 How to start the java-demo application
 ---
 
