@@ -13,8 +13,6 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.sql.*;
 import java.util.Properties;
 import java.util.concurrent.Executor;
-import java.util.Map;
-
 
 @Path("/hello-world-20190502020540")
 @Produces(MediaType.APPLICATION_JSON)
