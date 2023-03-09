@@ -1,4 +1,7 @@
 # java-demo
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/34e4a4abe87d409090dba4d9aa8586b6)](https://app.codacy.com/gh/inesgomas/java-demo7?utm_source=github.com&utm_medium=referral&utm_content=inesgomas/java-demo7&utm_campaign=Badge_Grade)
+
 ## A project used to showcase the java features of Codacy
 How to start the java-demo application
 ---
